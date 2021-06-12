@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles.css';
 import Hello from './components/Hello/Hello.js'
-//import swal from 'sweetalert'
+import swal from 'sweetalert'
 
 class Contact extends React.Component {
   constructor(props) {
@@ -19,7 +19,7 @@ class Contact extends React.Component {
       'input[type="password"]').value;
       //declaro función que controle las contraseñas incorrectas
       function incorrecto(){
-        alert('Contraseña incorrecta!, prueba otra vez')  
+        swal('Contraseña incorrecta!, prueba otra vez')  
     }
       
     const auth = password === this.state.password;
